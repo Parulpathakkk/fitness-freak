@@ -3,8 +3,9 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {  fontFamily: {
-      mono: ["Space Mono, monospace"],
-      bebas: ["Bebas Neue,  sans-serif"]
+      inter: ["Inter, monospace"],
+      mont: ["Montserrat,  sans-serif"],
+      unbounded: ["Unbounded,  sans-serif"],
     }},
   },
   plugins: [],
