@@ -4,3 +4,23 @@
 .blah{
     transform: matrix(0.99, -0.1, 0.1, 0.99, 0, 0);
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.2cqw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(145, 143, 143); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: black; 
+  }
