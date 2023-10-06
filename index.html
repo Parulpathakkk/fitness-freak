@@ -21,9 +21,9 @@
             <div>N</div>
             <div>E</div>
             <div>S</div>
-            <div class="scale-x-[-1]">S</div>
+            <div class=" transition-all duration-300" id="change2">S</div>
             <div>F</div>
-            <div class="text-[#F46D19] relative">R <div class="absolute top-[0.1cqw] right-[-0.1cqw] blah text-[#D90E7C] text-[13.2cqw]">R</div></div>
+            <div class="text-[#F46D19] relative">R <div class="absolute top-0  text-[#D90E7C] text-[13.2cqw] transition-all" id="change">R</div></div>
             <div>E</div>
             <div>A</div>
             <div>K</div>
@@ -90,5 +90,27 @@
        </a></div>
     </div>
     </section>
+    <script>
+
+function changeContentDelayed() {
+            // Get the element you want to change
+            var element = document.getElementById("change");
+            var element2 = document.getElementById("change2");
+
+            // Check if the element exists
+            if (element) {
+                // Change the content after 3 seconds (3000 milliseconds)
+                setTimeout(function() {
+                    element.classList.add("blah");
+                    element2.classList.add("scale-x-[-1]");
+                    // element.classList.remove("top-0");
+                    // element.classList.add("top-[0.1cqw]");
+                    // element.classList.add("right-[-0.1cqw]");
+                }, 1000); // Change content after 3 seconds
+            }
+        }
+        window.addEventListener("load", changeContentDelayed);
+
+    </script>
 </body>
 </html>
